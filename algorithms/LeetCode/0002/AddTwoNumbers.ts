@@ -12,6 +12,7 @@
     l1: ListNode | null,
     l2: ListNode | null
   ): ListNode | null {
+    // dummy は常に先頭を指しておき、temp を動かす
     let dummy = new ListNode(0);
     let temp = dummy;
     let carry = 0;
