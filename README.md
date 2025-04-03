@@ -4,5 +4,4 @@
 
 ## LeetCode > 30DaysOfJavaScript
 
-- Practice/30DaysOfJavaScript/TimeoutCancellation.ts
-- Practice/30DaysOfJavaScript/Memoize.ts
+Medium なの基本すべて。
