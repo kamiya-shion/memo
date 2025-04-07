@@ -56,6 +56,20 @@ const obj1 = { name: "Alice", age: 25 };
 const obj2 = { ...obj1, country: "Japan" }; // { name: "Alice", age: 25, country: "Japan" }
 ```
 
+オブジェクトの展開では、同じの名前のプロパティが検出された場合、プロパティは最後に割り当てられた値で上書きする。
+
+```ts
+const obj1 = { id: 2, x: 3, y: 6 };
+const obj2 = { id: 2, x: 10, y: 20 };
+
+const result = { ...obj1, ...obj2 };
+
+console.log(result); // { "id": 2, "x": 10, "y": 20 }
+```
+
+参考：
+https://developer.mozilla.org/ja/docs/Web/JavaScript/Reference/Operators/Spread_syntax#:~:text=bar%22%2C%20x%3A%2042%20%7D-,%E3%83%97%E3%83%AD%E3%83%91%E3%83%86%E3%82%A3%E3%81%AE%E4%B8%8A%E6%9B%B8%E3%81%8D,-%E3%81%82%E3%82%8B%E3%82%AA%E3%83%96%E3%82%B8%E3%82%A7%E3%82%AF%E3%83%88%E3%81%8C
+
 ## 参考
 
 https://developer.mozilla.org/ja/docs/Web/JavaScript/Reference/Functions/rest_parameters
